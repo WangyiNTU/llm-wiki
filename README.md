@@ -1,5 +1,7 @@
 # LLM Wiki — OpenClaw Skill
 
+![Hero](./01_hero.png)
+
 A markdown-first, LLM-powered wiki for personal knowledge management. Built on [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), adapted for OpenClaw.
 
 Raw source files go in → LLM synthesizes → durable topic pages come out. The wiki compounds over time rather than being rebuilt from scratch for every question.
