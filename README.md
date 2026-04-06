@@ -1,7 +1,5 @@
 # LLM Wiki — OpenClaw Skill
 
-![Hero](./01_hero.png)
-
 A markdown-first, LLM-powered wiki for personal knowledge management. Built on [Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f), adapted for OpenClaw.
 
 Raw source files go in → LLM synthesizes → durable topic pages come out. The wiki compounds over time rather than being rebuilt from scratch for every question.
@@ -10,38 +8,12 @@ Raw source files go in → LLM synthesizes → durable topic pages come out. The
 
 ---
 
-## Publishing to ClawhHub
-
-This skill is published on [ClawhHub](https://clawhub.ai). To install from ClawhHub:
-
-```bash
-openclaw skills install llm-wiki
-```
-
-To publish your own updated version of this skill to ClawhHub:
-
-```bash
-# Login first
-openclaw clawhub login
-
-# Publish the skill
-openclaw clawhub skill publish ./skills/llm-wiki/
-```
-
-Requirements for publishing:
-- Skill folder must have `SKILL.md` at the root ✓
-- `bin/wiki_tool.py` must be executable or callable via `python3` ✓
-- No private data in the skill folder (your `workspace/wiki/` is excluded) ✓
-- A clean `wiki-template/` folder for new user onboarding ✓
-
----
-
 ## Installation in OpenClaw
 
-### Option A: ClawhHub (recommended)
+### Option A: Git URL (recommended)
 
 ```bash
-openclaw skills install llm-wiki
+openclaw skills install git@github.com:WangyiNTU/llm-wiki.git
 ```
 
 ### Option B: Manual
