@@ -1,0 +1,16 @@
+{
+  "name": "My LLM Wiki",
+  "state_file": "wiki/.wiki-state.json",
+  "index_file": "wiki/INDEX.md",
+  "log_file": "wiki/log.md",
+  "schema_file": "wiki/schema.md",
+  "topics_dir": "wiki/topics",
+  "mode": "recommended",
+  "sources": [
+    {
+      "path": "wiki/sources",
+      "include": ["**/*.md", "**/*.pdf"],
+      "exclude": ["**/*.pdf.md"]
+    }
+  ]
+}
